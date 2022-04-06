@@ -19,7 +19,7 @@
                 </span>
             </div>
 
-            <form class="md:mt-4 mt-3" action="{{ route('tag.store') }}" method="POST" target="_blank">
+            <form class="md:mt-4 mt-3" action="{{ route('tag.store') }}" method="GET" target="_blank">
 
                 @csrf
 

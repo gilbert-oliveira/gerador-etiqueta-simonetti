@@ -16,6 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [TagController::class, 'create'])->name('tag.create');
 
-Route::post('/', [TagController::class, 'store'])->name('tag.store');
-
-Route::get('pdf', [TagController::class, 'generatePDF']);
+Route::get('/pdf', [TagController::class, 'store'])->name('tag.store');

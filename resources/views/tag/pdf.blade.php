@@ -61,10 +61,16 @@
             </span>
         </div>
 
-        <div class="col-span-3 border-[1.75px] border-black py-2 border-t-[1.75px] p-2">
+        <div class="print col-span-3 border-[1.75px] border-black py-2 border-t-[1.75px] p-2">
             <span class="">
                 <b>Motivo:</b> {{ $data['descricao'] }}
             </span>
         </div>
     </div>
 @endsection
+
+@push('js')
+    <script>
+        window.print();
+    </script>
+@endpush
