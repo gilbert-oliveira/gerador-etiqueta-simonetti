@@ -73,6 +73,5 @@
 @push('js')
     <script>
         window.print();
-        window.close();
     </script>
 @endpush
