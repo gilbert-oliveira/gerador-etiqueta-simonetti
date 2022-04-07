@@ -7,6 +7,8 @@
 
     <title>@yield('title', 'Gerador de Etiqueta')</title>
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}" class="text-black">
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 

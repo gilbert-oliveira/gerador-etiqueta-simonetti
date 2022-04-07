@@ -12,7 +12,7 @@
         </div>
         <div class="col-span-2 justify-end items-center border-r-[1.5px] border-black py-2 p-2">
             <span>
-                Informática
+                {{ $data['origem'] }}
             </span>
         </div>
 
@@ -55,6 +55,7 @@
         <div class="col-span-1 justify-start items-center py-2 border-x-[1.75px] border-t-[1.75px] border-black p-2">
             <span class="font-bold">PLAQUETA N°:</span>
         </div>
+
         <div class="col-span-2 justify-end items-center border-r-[1.5px] border-black py-2 border-t-[1.75px] p-2">
             <span>
                 {{ $data['patrimonio'] }}
