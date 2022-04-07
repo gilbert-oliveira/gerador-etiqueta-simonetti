@@ -14,12 +14,18 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
+
+    @livewireStyles
 </head>
 
 <body>
 
+<main>
+    @yield('main')
+    {{ $slot ?? '' }}
+</main><!-- Main -->
 
-<main>@yield('main')</main><!-- Main -->
+@livewireScripts
 
 <!-- Custom Scripts -->
 @yield('js')

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\TagController;
+use App\Http\Livewire\Tag;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TagController::class, 'create'])->name('tag.create');
-
-Route::get('/pdf', [TagController::class, 'store'])->name('tag.store');
+Route::get('/', Tag::class)->name('tag.create');
