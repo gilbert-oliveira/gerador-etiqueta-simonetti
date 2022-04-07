@@ -29,7 +29,7 @@
 
                     <input type="text" name="identificacao" id="identificacao"
                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-red-300 appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer"
-                           placeholder=" " required="" wire:model="identificacao">
+                           placeholder=" " required="" wire:model.defer="identificacao">
                     <label for="identificacao"
                            class="absolute text-sm text-gray-500 text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Identificação</label>
                 </div>
@@ -41,7 +41,7 @@
 
                     <input type="text" name="origem" id="origem"
                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-red-300 appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer"
-                           placeholder=" " required="" wire:model="origem">
+                           placeholder=" " required="" wire:model.defer="origem">
                     <label for="origem"
                            class="absolute text-sm text-gray-500 text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Origem/Setor</label>
                 </div>
@@ -50,7 +50,7 @@
 
                     <input type="text" name="destino" id="destino"
                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-red-300 appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer"
-                           placeholder=" " required="" wire:model="destino">
+                           placeholder=" " required="" wire:model.defer="destino">
                     <label for="destino"
                            class="absolute text-sm text-gray-500 text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Destino/Setor</label>
                 </div>
@@ -62,7 +62,7 @@
 
                     <input type="text" name="produto" id="produto"
                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-red-300 appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer"
-                           placeholder=" " required="" wire:model="produto">
+                           placeholder=" " required="" wire:model.defer="produto">
                     <label for="produto"
                            class="absolute text-sm text-gray-500 text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Produto</label>
                 </div>
@@ -74,7 +74,7 @@
 
                     <input type="number" name="patrimonio" id="patrimonio"
                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-red-300 appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer"
-                           placeholder=" " wire:model="patrimonio">
+                           placeholder=" " wire:model.defer="patrimonio">
                     <label for="patrimonio"
                            class="absolute text-sm text-gray-500 text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Patrimônio</label>
                 </div>
@@ -83,7 +83,7 @@
 
                     <input type="number" name="chamado" id="chamado"
                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-red-300 appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer"
-                           placeholder=" " min="0" wire:model="chamado">
+                           placeholder=" " min="0" wire:model.defer="chamado">
                     <label for="chamado"
                            class="absolute text-sm text-gray-500 text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:text-gray-900 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Chamado</label>
                 </div>
@@ -96,7 +96,7 @@
 
                 <textarea id="descricao" rows="4" name="descricao"
                           class="h-76 w-full text-sm text-gray-900 bg-transparent border-2 border-red-300 rounded appearance-none text-dark border-gray-500 focus:border-red-500 focus:border-opacity-60 focus:outline-none focus:ring-0 focus:border-red-500 peer bg-gray-50 mt-2"
-                          placeholder="" wire:model="descricao"></textarea>
+                          placeholder="" wire:model.defer="descricao"></textarea>
             </div>
 
             <div class="w-full group flex justify-end space-x-2">
