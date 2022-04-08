@@ -19,9 +19,7 @@
                 </span>
         </div>
 
-        <form class="md:mt-4 mt-3" wire:submit.prevent="print" method="POST">
-
-            @csrf
+        <form class="md:mt-4 mt-3" wire:submit.prevent="print">
 
             <div class="grid">
 
