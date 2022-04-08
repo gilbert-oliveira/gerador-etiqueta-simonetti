@@ -2,9 +2,9 @@
 
 @section('main')
     <div class="grid grid-cols-3 justify-center w-[80%] mx-auto mt-8">
-        <div class="col-span-3 flex justify-center items-center border-[1.75px] border-black py-2 border-t-[1.75px] text-lg space-x-2">
-            <span class="font-bold">IDENTIFICAÇÃO: </span>
-            <span>{{ $data['identificacao'] }}</span>
+        <div class="col-span-3 border-[1.75px] border-black py-2 border-t-[1.75px] text-lg space-x-2">
+            <div class="font-bold flex justify-center items-center">IDENTIFICAÇÃO: </div>
+            <div class="flex justify-center items-center">{{ $data['identificacao'] }}</div>
         </div>
 
         <div class="col-span-1 justify-start items-center py-2 border-x-[1.75px] border-black">
