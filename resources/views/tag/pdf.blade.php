@@ -3,25 +3,25 @@
 @section('main')
     <div class="grid grid-cols-3 justify-center w-[80%] mx-auto mt-8">
         <div class="col-span-3 border-[1.75px] border-black py-2 border-t-[1.75px] text-lg space-x-2">
-            <div class="font-bold flex justify-center items-center">IDENTIFICAÇÃO: </div>
+            <div class="font-bold flex justify-center items-center">IDENTIFICAÇÃO:</div>
             <div class="flex justify-center items-center">{{ $data['identificacao'] }}</div>
         </div>
 
         <div class="col-span-1 justify-start items-center py-2 border-x-[1.75px] border-black">
-            <span class="ml-2 font-bold">ORIGEM:</span>
+            <span class="ml-2 font-bold">DESTINO:</span>
         </div>
         <div class="col-span-2 flex justify-end items-center border-r-[1.5px] border-black py-2 p-2">
             <span>
-                {{ $data['origem'] }}
+                {{ $data['destino'] }}
             </span>
         </div>
 
         <div class="col-span-1 justify-start items-center py-2 border-x-[1.75px] border-t-[1.75px] border-black p-2">
-            <span class="font-bold">DESTINO/SETOR:</span>
+            <span class="font-bold">REMETENTE:</span>
         </div>
         <div class="col-span-2 flex justify-end items-center border-r-[1.5px] border-black py-2 border-t-[1.75px] p-2">
             <span>
-                {{ $data['destino'] }}
+                {{ $data['remetente'] }}
             </span>
         </div>
 

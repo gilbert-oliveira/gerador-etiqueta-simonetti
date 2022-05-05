@@ -7,7 +7,7 @@ use Livewire\Component;
 class Tag extends Component
 {
     public ?string $identificacao = null;
-    public ?string $origem = null;
+    public ?string $remetente = null;
     public ?string $destino = null;
     public ?string $produto = null;
     public ?int $patrimonio = null;
